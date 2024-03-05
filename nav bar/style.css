@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    background-color:rgb(2, 6, 43);
+}
+
+li, a, button{
+    font-family: "Montserrat",sans-serif;
+    font-weight:500;
+    font-size:16px;
+    color:white;
+    text-decoration:none;
+}
+#cl{
+    background-color:rgba(0,136,169,1);
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+}
+header{
+    display: flex;
+    justify-content: space-between; /* Updated to space between */
+    align-items: center;
+    padding: 0px 5%;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+/*.lg{
+    margin-right: 8rem;
+}*/
+
+.search-box{
+    width: fit-content;
+    height: fit-content;
+    margin-right: 20px;
+    position: relative;
+  }
+.input-search{
+    height: 50px;
+    width: 50px;
+    border-style: none;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+    background-color: #22a6b3;
+    padding-right: 40px;
+    color:#fff;
+  }
+  .input-search::placeholder{
+    color:rgba(255,255,255,.5);
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+  }
+  
+  .btn-search{
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    color:#ffffff ;
+    background-color:transparent;
+    pointer-events: painted;  
+  }
+  .btn-search:focus ~ .input-search{
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+  .input-search:focus{
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+  
+
+.logo{
+    cursor: pointer;
+    margin-right:20px;
+    height: 200px;
+}
+
+.nav-link{
+    list-style:none;
+}
+
+.nav-link li{
+    display:inline-block;
+    padding: 0px 20px; 
+}
+
+.nav-link li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav-link li a:hover{
+    color:#0088a9;
+}
+/*button css for login and cart*/
+button{
+    margin-left:20px;
+    padding:9px 25px;
+    background-color: rgba(0,136,169,1);
+    border:none;
+    border-radius: 58px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s ;
+}
+
+button:hover{
+    background-color: rgba(0,136,169,0.8)
+}
+.cart-button {
+    margin-left: 20px;
+}
+/*drop down of more section*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #22a6b3;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+
+.dropdown-content a:hover {
+   /* background-color: rgba(0,136,169,1);*/
+    color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a {
+    color: #fff; /* Set the text color */
+}
+/*cart*/
+.cart-count {
+    background-color: #fff;
+    color: #222;
+    border-radius: 50%;
+    padding: 2px 6px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 12px;
+}
+.cart-button button {
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 58px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    position: relative; /* Added to position the cart count */
+}
